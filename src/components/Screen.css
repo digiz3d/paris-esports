@@ -1,7 +1,6 @@
 .Screen {
     background-color: white;
     flex-grow: 1;
-    border-radius: 20px;
     margin: 0;
     padding: 20px;
 }

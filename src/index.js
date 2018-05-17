@@ -5,10 +5,10 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
-// import root reducer here
+import reducer from './reducers';
 
 const store = createStore(
-    () => false,    // imported reducer will go here
+    reducer,
     applyMiddleware(thunkMiddleware)
 );
 

@@ -1,9 +1,10 @@
 import React from 'react';
-import './Screen.css';
+import { connect } from 'react-redux';
+import '../Screen.css';
 
 class HomeScreen extends React.Component {
     render() {
-        return(
+        return (
             <div className="Screen">
                 Match teams, cotes
             </div>

@@ -5,10 +5,10 @@ import { Provider } from 'react-redux';
 
 import Header from './components/Header/Header';
 
-import HomeScreen from './screens/HomeScreen';
-import TournamentsScreen from './screens/TournamentsScreen';
-import MatchesScreen from './screens/MatchesScreen';
-import MatchScreen from './screens/MatchScreen';
+import HomeScreen from './components/HomeScreen/HomeScreen';
+import TournamentsScreen from './components/TournamentsScreen/TournamentsScreen';
+import MatchesScreen from './components/MatchesScreen/MatchesScreen';
+import MatchScreen from './components/MatchScreen/MatchScreen';
 
 class App extends React.Component {
   render() {
@@ -19,7 +19,7 @@ class App extends React.Component {
             <Header />
             <Switch>
               <Route exact path="/" component={HomeScreen} />
-              <Route exact path="/tournaments" component={TournamentsScreen} />
+              <Route exact path="/game/:gameId" component={TournamentsScreen} />
               <Route exact path="/tournament/:tournamentId" component={MatchesScreen} />
               <Route exact path="/match/:matchId" component={MatchScreen} />
             </Switch>

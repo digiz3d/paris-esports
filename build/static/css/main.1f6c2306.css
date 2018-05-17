@@ -1,0 +1,2 @@
+*{border:0;margin:0;padding:0;outline:0}body{font-family:sans-serif;min-height:100vh}#root,body{display:-ms-flexbox;display:flex}#root{-ms-flex-direction:column;flex-direction:column;background-color:#555;-ms-flex:1 1;flex:1 1}.Header{background-color:#555;text-align:center;color:#fff}.GameItem{background-color:#fff;padding:5px;margin:5px;display:-ms-flexbox;display:flex;border:1px solid #ddd;border-radius:10px;cursor:pointer}.Screen{background-color:#fff;-ms-flex-positive:1;flex-grow:1;margin:0;padding:20px}
+/*# sourceMappingURL=main.1f6c2306.css.map*/

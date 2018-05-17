@@ -1,0 +1,9 @@
+.GameItem {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
