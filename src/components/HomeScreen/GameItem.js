@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchGamesIfNeeded } from '../../actions/games';
+import { withRouter } from 'react-router-dom';
 import './GameItem.css';
 
 class GamesList extends React.Component {
@@ -9,11 +10,12 @@ class GamesList extends React.Component {
     }
 
     render() {
-        if (!this.props.game) return "Loading";
-
         return (
-            <div className="GameItem">
-                {this.props.game.name}
+            <div
+                className="GameItem"
+                onClick={() => this.props.history.push('/game/' + this.props.game.id)}
+                style={{ backgroundImage: 'url("' + this.props.game.coverImageUrl + '")' }}
+            >
             </div>
         );
     }
@@ -27,4 +29,4 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
     fetchGamesIfNeeded: () => dispatch(fetchGamesIfNeeded())
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(GamesList);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(GamesList));

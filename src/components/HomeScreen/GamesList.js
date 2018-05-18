@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchGamesIfNeeded } from '../../actions/games';
 import GameItem from './GameItem';
+import './GamesList.css';
 
 class GamesList extends React.Component {
     componentDidMount() {
