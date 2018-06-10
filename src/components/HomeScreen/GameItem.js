@@ -4,7 +4,7 @@ import { fetchGamesIfNeeded } from '../../actions/games';
 import { withRouter } from 'react-router-dom';
 import './GameItem.css';
 
-class GamesList extends React.Component {
+class GameItem extends React.Component {
     componentDidMount() {
         this.props.fetchGamesIfNeeded();
     }
@@ -29,4 +29,4 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
     fetchGamesIfNeeded: () => dispatch(fetchGamesIfNeeded())
 });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(GamesList));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(GameItem));

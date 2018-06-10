@@ -1,0 +1,9 @@
+.TournamentItem {
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+}

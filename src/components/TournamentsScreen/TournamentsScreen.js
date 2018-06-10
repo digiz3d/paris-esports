@@ -1,11 +1,13 @@
 import React from 'react';
+
+import TournamentsList from './TournamentsList';
 import '../Screen.css';
 
 class HomeScreen extends React.Component {
     render() {
-        return(
+        return (
             <div className="Screen">
-                Tournaments list
+                <TournamentsList />
             </div>
         );
     }

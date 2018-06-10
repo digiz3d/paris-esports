@@ -17,10 +17,15 @@ function getGames() {
 
 function getTournaments() {
     return Promise.resolve({
-        DHOPENTOUR2018: {
+        DHOPENTOURS2018: {
             id: 'DHOPENTOURS2018',
             name: 'DreamHack Open Tours 2018',
             gameId: 'CSGO'
+        },
+        LCD2018: {
+            id: 'LCD2018',
+            name: 'League Championship Denmark 2018',
+            gameId: 'LOL'
         }
     });
 }
@@ -29,16 +34,28 @@ function getMatches() {
     return Promise.resolve({
         MATCH1: {
             id: 'MATCH1',
-            tournament: 'DHOPENTOUR2018',
+            tournament: 'DHOPENTOURS2018',
             team1: 'ENVYUS',
             team2: 'GODSENT'
         },
         MATCH2: {
             id: 'MATCH2',
-            tournament: 'DHOPENTOUR2018',
+            tournament: 'DHOPENTOURS2018',
             team1: 'TORQUED',
             team2: 'NORTH'
-        }
+        },
+        MATCH3: {
+            id: 'MATCH1',
+            tournament: 'LCD2018',
+            team1: 'HORSEN',
+            team2: 'SOLIDARITY'
+        },
+        MATCH4: {
+            id: 'MATCH2',
+            tournament: 'LCD2018',
+            team1: 'SORBY',
+            team2: 'TRICKEDACADEMY'
+        },
     });
 }
 
@@ -63,6 +80,23 @@ function getTeams() {
         GODSENT: {
             id: 'GODSENT',
             name: 'GODSENT'
+        },
+
+        HORSEN: {
+            id: 'ENVYUS',
+            name: 'Horsens Esport Yellow'
+        },
+        SOLIDARITY: {
+            id: 'SOLIDARITY',
+            name: 'Solidarity eSports'
+        },
+        SORBY: {
+            id: 'SORBY',
+            name: 'Sørby eSport'
+        },
+        TRICKEDACADEMY: {
+            id: 'TRICKEDACADEMY',
+            name: 'Tricked Academy'
         }
     });
 }
