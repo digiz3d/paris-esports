@@ -1,0 +1,7 @@
+.MatchesList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5px;
+}

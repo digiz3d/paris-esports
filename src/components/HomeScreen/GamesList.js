@@ -10,7 +10,7 @@ class GamesList extends React.Component {
     }
 
     render() {
-        if (!this.props.games) return "null";
+        if (!this.props.games) return "...";
 
         return (
             <div className="GamesList">

@@ -11,13 +11,14 @@ class TournamentItem extends React.Component {
     }
 
     render() {
-        if (!this.props.tournament) return "null";
+        if (!this.props.tournament) return "...";
 
         return (
             <div
                 className="TournamentItem"
                 onClick={() => this.props.history.push('/tournament/' + this.props.tournament.id)}
-            >{this.props.tournament.name}
+            >
+                {this.props.tournament.name}
             </div>
         );
     }

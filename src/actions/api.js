@@ -34,25 +34,25 @@ function getMatches() {
     return Promise.resolve({
         MATCH1: {
             id: 'MATCH1',
-            tournament: 'DHOPENTOURS2018',
+            tournamentId: 'DHOPENTOURS2018',
             team1: 'ENVYUS',
             team2: 'GODSENT'
         },
         MATCH2: {
             id: 'MATCH2',
-            tournament: 'DHOPENTOURS2018',
+            tournamentId: 'DHOPENTOURS2018',
             team1: 'TORQUED',
             team2: 'NORTH'
         },
         MATCH3: {
-            id: 'MATCH1',
-            tournament: 'LCD2018',
+            id: 'MATCH3',
+            tournamentId: 'LCD2018',
             team1: 'HORSEN',
             team2: 'SOLIDARITY'
         },
         MATCH4: {
-            id: 'MATCH2',
-            tournament: 'LCD2018',
+            id: 'MATCH4',
+            tournamentId: 'LCD2018',
             team1: 'SORBY',
             team2: 'TRICKEDACADEMY'
         },
@@ -83,7 +83,7 @@ function getTeams() {
         },
 
         HORSEN: {
-            id: 'ENVYUS',
+            id: 'HORSEN',
             name: 'Horsens Esport Yellow'
         },
         SOLIDARITY: {

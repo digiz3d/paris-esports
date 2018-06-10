@@ -1,10 +1,16 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import './Header.css';
 
 class Header extends React.Component {
+    goToHome(e) {
+        e.preventDefault();
+        this.props.history.push('/');
+    }
+
     render() {
-        return(
-            <div className="Header">
+        return (
+            <div className="Header" onClick={(e) => this.goToHome(e)}>
                 <h1>Paris eSports</h1>
                 <div><span role="img" aria-label="baguette">🥖</span></div>
             </div>
@@ -12,4 +18,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default withRouter(Header);

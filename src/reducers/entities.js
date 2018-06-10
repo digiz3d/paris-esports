@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import { RECEIVE_GAMES, INVALIDATE_GAMES, REQUEST_GAMES } from '../actions/games';
 import { RECEIVE_TOURNAMENTS, INVALIDATE_TOURNAMENTS, REQUEST_TOURNAMENTS } from '../actions/tournaments';
+import { RECEIVE_MATCHES, INVALIDATE_MATCHES, REQUEST_MATCHES } from '../actions/matches';
 
 function games(state = { isFetching: false, didInvalidate: true, items: {} }, action) {
     switch (action.type) {
@@ -34,8 +35,25 @@ function tournaments(state = { isFetching: false, didInvalidate: true, items: {}
     }
 }
 
+function matches(state = { isFetching: false, didInvalidate: true, items: {} }, action) {
+    switch (action.type) {
+        case INVALIDATE_MATCHES:
+            return Object.assign({}, state, { didInvalidate: true });
+
+        case REQUEST_MATCHES:
+            return Object.assign({}, state, { isFetching: true, didInvalidate: false });
+
+        case RECEIVE_MATCHES:
+            return Object.assign({}, state, { isFetching: false, didInvalidate: false, items: action.items });
+
+        default:
+            return state;
+    }
+}
+
 
 export default combineReducers({
     games,
-    tournaments
+    tournaments,
+    matches
 });

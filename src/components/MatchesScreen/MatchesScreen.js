@@ -1,14 +1,16 @@
 import React from 'react';
+
+import MatchesList from './MatchesList';
 import '../Screen.css';
 
-class HomeScreen extends React.Component {
+class MatchesScreen extends React.Component {
     render() {
-        return(
+        return (
             <div className="Screen">
-                Match list
+                <MatchesList />
             </div>
         );
     }
 }
 
-export default HomeScreen;
+export default MatchesScreen;

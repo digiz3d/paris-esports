@@ -12,7 +12,7 @@ class TournamentsList extends React.Component {
     }
 
     render() {
-        if (!this.props.tournaments) return "null";
+        if (!this.props.tournaments) return "...";
 
         return (
             <div className="TournamentsList">
